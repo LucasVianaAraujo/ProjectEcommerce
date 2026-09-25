@@ -11,7 +11,6 @@ import { LucideEye, LucideEyeOff } from '@lucide/angular';
 })
 export class Login {
   private readonly router = inject(Router);
-
   protected readonly mostrarSenha = signal(false);
 
   email = '';
@@ -28,6 +27,4 @@ export class Login {
       alert('Credenciais inválidas!');
     }
   }
-
-    
-  }
+}
