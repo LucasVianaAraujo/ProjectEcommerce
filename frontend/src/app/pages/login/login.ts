@@ -1,17 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
+import { LucideEye, LucideEyeOff } from '@lucide/angular';
 
 @Component({
-  imports: [FormsModule, RouterLink],
   selector: 'app-login',
-  styleUrl: './login.css',
+  imports: [FormsModule, LucideEye, LucideEyeOff],
   templateUrl: './login.html',
+  styleUrl: './login.css',
 })
 export class Login {
+  private readonly router = inject(Router);
+
+  protected readonly mostrarSenha = signal(false);
 
   email = '';
   senha = '';
+
+  alternarSenha() {
+    this.mostrarSenha.update((valor) => !valor);
+  }
 
   enviar() {
     if (this.email == 'admin@gmail.com' && this.senha == '1234') {
@@ -20,4 +28,6 @@ export class Login {
       alert('Credenciais inválidas!');
     }
   }
-}
+
+    
+  }
