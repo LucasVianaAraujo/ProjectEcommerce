@@ -1,1 +1,1 @@
-# ProjectEcommerce
+Projeto de e-commerce simples desenvolvido para fins acadêmicos.

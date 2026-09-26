@@ -1,0 +1,46 @@
+.BreadCrump {
+    display: flex;
+    width: 100%;
+    height: 2vh;
+    background-color: gray;
+    align-items: center;
+    color: white;
+    font-size: 1.5vh;
+}
+
+.CarrosselFundo {
+    display: flex;
+    width: 76%;
+    background-color: red;
+    justify-self: center;
+    height: 50vh;
+}
+
+.ElementosDoCarrossel {
+    display: flex;
+    width: 60%;
+    align-self: center;
+    height: 50vh;
+    background-color: blue;
+}
+
+.Botões {
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    gap: 2vh;
+    align-items: flex-end;
+    background-color: red;
+}
+
+.Botões button {
+    display: flex;
+    height: 3vh;
+    width: 15vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
